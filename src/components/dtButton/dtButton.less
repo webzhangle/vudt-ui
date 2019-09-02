@@ -1,0 +1,142 @@
+@import '../../styles/config';
+/* button组件样式 */ 
+.dt-btn {
+    width: 100%;
+    border-width: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    // line-height: 2.33333333;
+    height: 44px;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+/* button组件样式大小 - 中 */
+.dt-btn_middle {
+    display: inline-block;
+    width: auto;
+    height: 38px;
+}
+/* button组件样式大小 - 小 */
+.dt-btn_mini {
+    display: inline-block;
+    width: auto;
+    height: 32px;
+    font-size: 13px;
+}
+/* ----------------------------------------default--------------------------------------------- */
+.dt-btn_default {
+    color: @main-fontColor;
+    background-color: @default-color;
+    border: 1px solid #E6E6E6;
+}
+.dt-btn_default:not(.weui-btn_disabled):active {
+    color: rgba(255, 255, 255, 0.6);
+    color: @main-fontColor;
+    opacity: 0.6;
+    background-color: @default-color-active;
+}
+.dt-btn_default:disabled {
+    background-color: @default-color-disabled;
+    color: rgba(0, 0, 0, 0.3);
+}
+.dt-reverse-btn_default {
+    color: @main-fontColor;
+    background-color: transparent;
+    border: 1px solid #999;
+}
+.dt-reverse-btn_default:not(.weui-btn_disabled):active {
+    color: rgba(255, 255, 255, 0.6);
+    color: @main-fontColor;
+    opacity: 0.6;
+    background-color: transparent;
+}
+.dt-reverse-btn_default:disabled {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------------------primary--------------------------------------------- */
+.dt-btn_primary {
+    background-color: @primary-color;
+}
+.dt-btn_primary:not(.weui-btn_disabled):active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: @primary-color-active;
+}
+.dt-btn_primary:disabled {
+    background-color: @primary-color-disabled;
+    color: rgba(255, 255, 255, 0.6);
+}
+.dt-reverse-btn_primary {
+    background-color: transparent;
+    border: 1px solid @primary-color;
+    color: @primary-color;
+}
+.dt-reverse-btn_primary:not(.weui-btn_disabled):active {
+    color: @primary-color;
+    opacity: 0.6;
+    background-color: transparent;
+}
+.dt-reverse-btn_primary:disabled {
+    background-color: transparent;
+    color: @primary-color;
+    opacity: 0.6;
+}
+/* ----------------------------------------warn--------------------------------------------- */
+.dt-btn_warn {
+    background-color: @warn-color;
+}
+.dt-btn_warn:not(.weui-btn_disabled):active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: @warn-color-active;
+}
+.dt-btn_warn:disabled {
+    background-color: @warn-color-disabled;
+    color: rgba(255, 255, 255, 0.6);
+}
+.dt-reverse-btn_warn {
+    background-color: transparent;
+    border: 1px solid @warn-color;
+    color: @warn-color;
+}
+.dt-reverse-btn_warn:not(.weui-btn_disabled):active {
+    color: @warn-color;
+    background-color: transparent;
+    border: 1px solid @warn-color-active;
+    opacity: 0.6;
+}
+.dt-reverse-btn_warn:disabled {
+    background-color: transparent;
+    opacity: 0.6;
+}
+/* ----------------------------------------keyframes--------------------------------------------- */
+@-webkit-keyframes weuiLoading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.dt-btn_loading {
+    .dt-loading {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        animation: weuiLoading 1s steps(12, end) infinite;
+        background: transparent url('../../assets/images/loading.png') no-repeat;
+        background-size: 100%;
+    }
+}   

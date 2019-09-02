@@ -1,0 +1,103 @@
+@import '../../styles/config';
+.dt-mask {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dt-fade-enter-active,.dt-fade-leave-active {
+    opacity:  0;/*透明度*/
+}
+.dt-fade-enter, .dt-fade-leave-to {
+    opacity:  1;/*透明度*/
+    transition: all 2s;
+}
+.dt-modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.line {
+    width: 1px;
+    background: #efefef;
+}
+.dt-dialog {
+    position: fixed;
+    display: table;
+    z-index: 5000;
+    width: 80%;
+    max-width: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.dt-dialog-hd {
+    padding: 1.3em 1.6em 0.5em;
+}
+.dt-dialog-title {
+    font-weight: 400;
+    font-size: 18px;
+}
+.dt-dialog-bd {
+    padding: 0 1.6em 0.8em;
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 1.3;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #999999;
+}
+.dt-dialog-ft{
+    position: relative;
+    line-height: 48px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.dt-dialog-btn {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #3CC51F;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: relative;
+    line-height: 48px;
+    background: #fff;
+    font-size: 16px;
+    height: 48px;
+}
+.dt-dialog-btn:active {
+    background: #dedede;
+}
+.dt-dialog-btn_primary {
+    color: #FF9900;
+}
+.dt-dialog-ft:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D5D5D6;
+    color: #D5D5D6;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
