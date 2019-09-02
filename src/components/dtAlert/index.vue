@@ -1,21 +1,20 @@
 <template>
     <div v-show="show">
-        <transition name="dt-fade">
-            <div class="dt-mask"></div>
+        <div class="dt-mask"></div>
+        <transition name="fade">
+            <div class="dt-dialog" style="">
+                <div class="dt-dialog-hd">
+                    <strong class="dt-dialog-title">{{ title }}</strong>
+                </div>
+                <div class="dt-dialog-bd">
+                    <div>{{ content }}</div>
+                </div>
+                <div class="dt-dialog-ft">
+                    <button  v-if="number >= '2'" class="dt-dialog-btn dt-dialog-btn_cancel" @click="cancel">取消</button>
+                    <button class="dt-dialog-btn dt-dialog-btn_confirm" @click="confirm">确定</button>
+                </div>
+            </div>
         </transition>
-        <div class="dt-dialog" style="">
-            <div class="dt-dialog-hd">
-                <strong class="dt-dialog-title">{{ title }}</strong>
-            </div>
-            <div class="dt-dialog-bd">
-                <div>{{ content }}</div>
-            </div>
-            <div class="dt-dialog-ft">
-                <button class="dt-dialog-btn dt-dialog-btn_primary" @click="confirm">确定</button>
-                <p class="line" v-if="number >= '2'"></p>
-                <button  v-if="number >= '2'" class="dt-dialog-btn dt-dialog-btn_primary" @click="cancel">取消</button>
-            </div>
-        </div>
     </div>
 </template>
 <script>

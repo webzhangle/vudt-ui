@@ -9,22 +9,10 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
-.dt-fade-enter-active,.dt-fade-leave-active {
-    opacity:  0;/*透明度*/
-}
-.dt-fade-enter, .dt-fade-leave-to {
-    opacity:  1;/*透明度*/
-    transition: all 2s;
-}
 .dt-modal-open {
     overflow: hidden;
     position: fixed;
     width: 100%;
-}
-
-.line {
-    width: 1px;
-    background: #efefef;
 }
 .dt-dialog {
     position: fixed;
@@ -39,24 +27,49 @@
     margin: auto;
     background-color: #FFFFFF;
     text-align: center;
-    border-radius: 3px;
+    border-radius: @alert-border-radius;
     overflow: hidden;
+    padding: 12px;
+    animation: boundShow 0.2s
+}
+@keyframes boundShow
+{
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform:  scale(1)
+    }
+}
+// @keyframes boundHide
+// {
+//     from {
+//         transform: scale(1)
+//     }
+//     to {
+//         transform: scale(0)
+//     }
+// }
+.dt-dialog-btn:nth-child(1) {
+    // 
+}
+.dt-dialog-btn:nth-child(2) {
+    margin-left: 12px;
 }
 .dt-dialog-hd {
-    padding: 1.3em 1.6em 0.5em;
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 .dt-dialog-title {
     font-weight: 400;
     font-size: 18px;
 }
 .dt-dialog-bd {
-    padding: 0 1.6em 0.8em;
-    min-height: 40px;
     font-size: 15px;
-    line-height: 1.3;
     word-wrap: break-word;
     word-break: break-all;
     color: #999999;
+    margin-bottom: 24px;
 }
 .dt-dialog-ft{
     position: relative;
@@ -80,24 +93,22 @@
     background: #fff;
     font-size: 16px;
     height: 48px;
+    border-radius: @alert-border-radius;
 }
-.dt-dialog-btn:active {
+.dt-dialog-btn_cancel:active {
     background: #dedede;
 }
-.dt-dialog-btn_primary {
-    color: #FF9900;
+.dt-dialog-btn_confirm:active {
+    background: #109962;
 }
-.dt-dialog-ft:after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 1px;
-    border-top: 1px solid #D5D5D6;
-    color: #D5D5D6;
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: scaleY(0.5);
-    transform: scaleY(0.5);
+.dt-dialog-btn_confirm {
+    color: #fff;
+    background: @pramry;
+    font-size: 15px;
+}
+.dt-dialog-btn_cancel {
+    background: #fff;
+    border:1px solid #E6E6E6;
+    font-size: 15px;
+    color: #666666;
 }

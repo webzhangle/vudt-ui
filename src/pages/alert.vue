@@ -1,6 +1,6 @@
 <template>
     <div>
-        <dt-alert :show1 = "show1" title="信息" content="消息已成功发送" @cancel="cancel" number="1" @confirm="confirm" />
+        <dt-alert :show1 = "show1" title="信息" content="消息已成功发送" @cancel="cancel" number="2" @confirm="confirm" />
         <button @click="qwe">点击触发</button>
     </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     },
     data () {
         return {
-            show1: false
+            show1: true
         }
     },
     methods: {
