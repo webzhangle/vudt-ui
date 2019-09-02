@@ -20,7 +20,7 @@
 </template>
 <script>
 export default {
-    name : 'dt-dialog',
+    name : 'dt-alert',
     props: {
         show1: {
             type:Boolean,
@@ -60,5 +60,5 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import url('./dtDialog');
+@import url('./dtAlert');
 </style>

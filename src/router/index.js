@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Button from '@/pages/button'
-import Dialog from '@/pages/dialog'
+import Alert from '@/pages/Alert'
 Vue.use(Router)
 
 export default new Router({
@@ -11,9 +11,9 @@ export default new Router({
           name: 'Button',
           component: Button
         },{
-          path: '/Dialog',
-          name: 'Dialog',
-          component: Dialog
+          path: '/Alert',
+          name: 'Alert',
+          component: Alert
         }
     ]
 })
