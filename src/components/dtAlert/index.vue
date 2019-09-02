@@ -1,8 +1,8 @@
 <template>
-    <div v-show="show">
-        <div class="dt-mask"></div>
+    <div>
+        <div class="dt-mask" v-show="show"></div>
         <transition name="fade">
-            <div class="dt-dialog" style="">
+            <div class="dt-dialog" style="" v-show="show">
                 <div class="dt-dialog-hd">
                     <strong class="dt-dialog-title">{{ title }}</strong>
                 </div>
