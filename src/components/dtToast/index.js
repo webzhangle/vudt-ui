@@ -9,6 +9,7 @@ let dtToast = (obj) => {
         ToastDom.show = true
         ToastDom.text = obj.text || ''
         ToastDom.duration = obj.duration || '0'
+        ToastDom.type = obj.type || 'success'
         if (obj.duration) {
             setTimeout(()=>{
                 ToastDom.show = false

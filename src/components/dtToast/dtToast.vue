@@ -1,6 +1,7 @@
 <template>
     <div class="dt-toast" v-show="show">
-        <div class="dt-toast-content">
+        <div class="dt-toast-content" :class="classs">
+            <svg-icon :icon-class="type" v-if="type != ''"></svg-icon>
             <p>{{ text }}</p>
         </div>
     </div>
@@ -16,11 +17,20 @@ export default {
         duration: {
             type: String,
             default: '0'
+        },
+        type : {
+            type: String,
+            default: ''
         }
     },
     data () {
         return {
-            show: this.text.length == 0 ? false : true
+            show: this.text.length == 0 ? false : true,
+        }
+    },
+    computed : {
+        classs () {
+            return this.type != '' ? 'dt-toast-content-svg' : ''
         }
     },
     mounted () {

@@ -1,7 +1,7 @@
 <template>
     <div>
         <dt-button @click.native="toastClick">提示toast</dt-button>
-        <!-- <dt-toast text="123" duration='5'></dt-toast> -->
+        <!-- <dt-toast text="成功" duration='5' type="success"></dt-toast> -->
         <dt-button type="primary" @click.native="toastClose">关闭toast</dt-button>
     </div>
 </template>
@@ -18,6 +18,7 @@ export default {
         toastClick () {
             this.$toast({
                 text:'123',
+                type:'success'
             })
         },
         toastClose () {
