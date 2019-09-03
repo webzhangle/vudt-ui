@@ -3,7 +3,7 @@
         :style="buttonStyle"
         class="dt-btn"
         :class="classes"
-        :disabled="btnDisabled"
+        :disabled="btnDisabled1"
         :type="actionType"
         @click="onClick">
         <i class="dt-loading" v-if="showLoading"></i>
@@ -45,11 +45,11 @@ export default {
     data () {
         return {
             text: '',
-            btnDisabled:this.disabled
+            btnDisabled1: false
         }
     },
     created () {
-        this.showLoading ? this.btnDisabled = true : this.btnDisabled = false
+        this.showLoading ? this.btnDisabled1 = true : this.btnDisabled1 = false
     },
     computed: {
         buttonStyle () {
