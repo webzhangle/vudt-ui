@@ -3,7 +3,8 @@
         <dt-header title = "我是标题" leftText="返回" @leftClick="leftClick"/>
         
         <dt-header title = "我是标题" leftText="" leftHide/>
-        <dt-header  @rightClick="rightClick">
+
+        <dt-header @rightClick="rightClick">
             <svg-icon icon-class="more"></svg-icon>
         </dt-header>
     </div>
@@ -16,7 +17,7 @@ Vue.use(header)
 export default {
     methods: {
         leftClick () {
-            alert(1)
+           console.log(123)
         },
         rightClick () {
             alert(2)

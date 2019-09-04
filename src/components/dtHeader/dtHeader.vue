@@ -39,7 +39,14 @@ export default {
     },
     methods: {
         left () {
-            this.$emit('leftClick')
+            if (this.$parent.leftClick) {
+                this.$parent.leftClick()
+            } else {
+                this.$router.go(-1)
+            }
+            
+            
+            
         },
         right () {
             this.$emit('rightClick')

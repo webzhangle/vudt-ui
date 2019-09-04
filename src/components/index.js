@@ -16,6 +16,8 @@ import dtCheckBox from './dtCheckBox/dtCheckBox'
 import dtRadio from './dtRadio/dtRadio'
 //header 组件
 import dtHeader from './dtHeader/dtHeader'
+//进度条组件
+import dtProgress from './dtProgress/dtProgress'
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)
@@ -49,6 +51,11 @@ export const radio = {
 export const header = {
     install (Vue) {
         Vue.component('dtHeader',dtHeader)
+    }
+} 
+export const progress = {
+    install (Vue) {
+        Vue.component('dtProgress',dtProgress)
     }
 } 
 

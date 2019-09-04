@@ -8,6 +8,7 @@ import Switch from '@/pages/switch'
 import CheckBox from '@/pages/checkBox'
 import Radio from '@/pages/radio'
 import Header from '@/pages/header'
+import Progress from '@/pages/progress'
 Vue.use(Router)
 
 export default new Router({
@@ -51,6 +52,11 @@ export default new Router({
           path: '/Header',
           name: 'Header',
           component: Header
+        },
+        {
+          path: '/Progress',
+          name: 'Progress',
+          component: Progress
         }
     ]
 })
