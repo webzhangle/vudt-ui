@@ -7,6 +7,7 @@ import Loading from '@/pages/Loading'
 import Switch from '@/pages/switch'
 import CheckBox from '@/pages/checkBox'
 import Radio from '@/pages/radio'
+import Header from '@/pages/header'
 Vue.use(Router)
 
 export default new Router({
@@ -45,6 +46,11 @@ export default new Router({
           path: '/Radio',
           name: 'Radio',
           component: Radio
+        },
+        {
+          path: '/Header',
+          name: 'Header',
+          component: Header
         }
     ]
 })

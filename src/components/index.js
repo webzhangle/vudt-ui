@@ -14,8 +14,8 @@ import dtSwitch from './dtSwitch/dtSwitch'
 import dtCheckBox from './dtCheckBox/dtCheckBox'
 // dtRadio 组件
 import dtRadio from './dtRadio/dtRadio'
-
-
+//header 组件
+import dtHeader from './dtHeader/dtHeader'
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)
@@ -44,6 +44,11 @@ export const checkBox = {
 export const radio = {
     install (Vue) {
         Vue.component('dtRadio',dtRadio)
+    }
+} 
+export const header = {
+    install (Vue) {
+        Vue.component('dtHeader',dtHeader)
     }
 } 
 

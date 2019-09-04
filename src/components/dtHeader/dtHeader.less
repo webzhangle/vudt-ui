@@ -1,0 +1,76 @@
+@import '../../styles/config';
+/*header开关*/
+
+.dt-header {
+    position: relative;
+    padding: 3px 0;
+    box-sizing: border-box;
+    background: @linearGradient;
+    .svg-icon{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        overflow: hidden;
+        color: #fff;
+    }
+}
+.dt-header .dt-header-left {
+    left: 18px;
+}
+.dt-header .dt-header-left .dt-header-back {
+    padding-left: 16px;
+}
+.dt-header .dt-header-left .left-arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: -5px;
+}
+.dt-header .dt-header-left .left-arrow:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-width: 2px 0 0 2px;
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+    top: 8px;
+    left: 7px;
+}
+.dt-header-title-area, .dt-header .dt-header-title {
+    margin: 0 88px;
+    height: 44px;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dt-header .dt-header-title {
+    line-height: 44px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+.dt-header .dt-header-right {
+    right: 15px;
+}
+.dt-header .dt-header-left, .dt-header .dt-header-right {
+    position: absolute;
+    top: 14px;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+.dt-header .dt-header-right a, .dt-header .dt-header-right button {
+    margin-left: 8px;
+    margin-right: 0;
+}
+.dt-header .dt-header-left a, .dt-header .dt-header-left button, .dt-header .dt-header-right a, .dt-header .dt-header-right button {
+    float: left;
+    margin-right: 8px;
+    color: #fff;
+}

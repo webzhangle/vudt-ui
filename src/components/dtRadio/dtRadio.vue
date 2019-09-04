@@ -1,33 +1,37 @@
 <template>
     <div class="dt-radio-container">
-        <input class="dt-radio" name="radio" type="radio" ref="radio" @click="radioChange($event)">
-        <svg-icon icon-class="radio" v-show="checkedBox"></svg-icon>
-        <svg-icon icon-class="unradio" v-show="!checkedBox"></svg-icon>
+        <input class="dt-radio" id="radio" name="radio" type="radio"  @change="radioChange" :value="value">
+        <svg-icon icon-class="radio" v-show="checked"></svg-icon>
+        <svg-icon icon-class="unRadio" v-show="!checked"></svg-icon>
     </div>
 </template>
 <script>
-
 export default {
     name : 'dt-radio',
     props : {
         checked : {
             type: Boolean,
-            default: false
-        }
+            default: false,
+        },
+        value : {
+            type: String,
+            default: '',
+        },
+    },
+    watch : {
+
     },
     data () {
         return {
-            checkedBox: this.checked
+            radioChecked: this.checked
         }
     },
     mounted () {
-        if (this.checked) {
-            this.$refs.radio.checked = true
-        }
+
     },
     methods: {
         radioChange (e) {
-            this.checkedBox = !this.checkedBox
+            this.$emit('getVal',this.value)
         }
     }
     
