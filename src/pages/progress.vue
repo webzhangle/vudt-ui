@@ -16,9 +16,9 @@ export default {
         }
     },
     mounted () {
-        setInterval(()=>{
+        this.time = setInterval(()=>{
             this.number = (parseInt(this.number) + 1).toString()
-        },10000)
+        },100)
     }
 }
 </script>
