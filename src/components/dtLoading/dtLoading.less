@@ -1,5 +1,5 @@
 @import '../../styles/config';
-.dt-toast {
+.dt-loading {
     position: absolute;
     top: 0;
     left:0;
@@ -9,8 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .dt-toast-content {
-        padding: 12px 8px;
+    .dt-loading-content {
+        width: 120px;
+        height: 120px;
         border-radius: @alert-border-radius;
         background: rgba(0,0,0,.6);
         p {
@@ -18,13 +19,5 @@
             color: #fff;
             text-align: center;
         }
-    }
-    .dt-toast-content-svg {
-        min-width: 96px;
-        min-height: 96px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
     }
 }

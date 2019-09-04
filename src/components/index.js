@@ -8,6 +8,14 @@ Vue.prototype.$alert = dtAlertApi
 import dtToast from './dtToast/dtToast'
 import dtToastApi from './dtToast/index.js'
 Vue.prototype.$toast = dtToastApi
+// switch组件
+import dtSwitch from './dtSwitch/dtSwitch'
+// checkBox 组件
+import dtCheckBox from './dtCheckBox/dtCheckBox'
+// dtRadio 组件
+import dtRadio from './dtRadio/dtRadio'
+
+
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)
@@ -23,3 +31,19 @@ export const toast = {
         Vue.component('dtToast',dtToast)
     }
 }
+export const Switch = {
+    install (Vue) {
+        Vue.component('dtSwitch',dtSwitch)
+    }
+} 
+export const checkBox = {
+    install (Vue) {
+        Vue.component('dtCheckBox',dtCheckBox)
+    }
+} 
+export const radio = {
+    install (Vue) {
+        Vue.component('dtRadio',dtRadio)
+    }
+} 
+
