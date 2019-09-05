@@ -1,23 +1,23 @@
 import Vue from 'vue'
-import dtButton from './dtButton/index'
+import dtButton from './dtButton/index.vue'
 // 弹窗组件
-import dtAlert from './dtAlert/dtAlert'
+import dtAlert from './dtAlert/dtAlert.vue'
 import dtAlertApi from './dtAlert/index.js'
 Vue.prototype.$alert = dtAlertApi
 // toast组件
-import dtToast from './dtToast/dtToast'
+import dtToast from './dtToast/dtToast.vue'
 import dtToastApi from './dtToast/index.js'
 Vue.prototype.$toast = dtToastApi
 // switch组件
-import dtSwitch from './dtSwitch/dtSwitch'
+import dtSwitch from './dtSwitch/dtSwitch.vue'
 // checkBox 组件
-import dtCheckBox from './dtCheckBox/dtCheckBox'
+import dtCheckBox from './dtCheckBox/dtCheckBox.vue'
 // dtRadio 组件
-import dtRadio from './dtRadio/dtRadio'
+import dtRadio from './dtRadio/dtRadio.vue'
 //header 组件
-import dtHeader from './dtHeader/dtHeader'
+import dtHeader from './dtHeader/dtHeader.vue'
 //进度条组件
-import dtProgress from './dtProgress/dtProgress'
+import dtProgress from './dtProgress/dtProgress.vue'
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)

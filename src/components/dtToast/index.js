@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Toast from './dtToast';
+import Toast from './dtToast.vue';
 const ToastConstructor = Vue.extend(Toast);
 let ToastDom = new ToastConstructor({
     el: document.createElement('div')

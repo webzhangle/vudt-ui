@@ -1,16 +1,17 @@
 {
   "name": "vudt-ui",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A Vue.js project",
-  "author": "zhangle <729728395@qq.com>",
-  "private": true,
+  "author": "zhangle <759728395@qq.com>",
+  "private": false,
+  "main": "dist/vudt.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "build": "node build/build.js"
+    "build": "webpack --display-error-details --config webpack.config.js"
   },
   "dependencies": {
     "reset.less": "^1.0.5",

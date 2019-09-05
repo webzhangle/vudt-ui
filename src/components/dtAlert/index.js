@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Alert from './dtAlert';
+import Alert from './dtAlert.vue';
 const AlertConstructor = Vue.extend(Alert);
 let dtAlert = (obj) => {
     //用promise封装
