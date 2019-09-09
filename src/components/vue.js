@@ -1,6 +1,6 @@
-import dtAlert from './dtAlert/index'
+import dtMessage from './dtMessage/index'
 import dtToast from './dtToast/index';
 export default {
-    dtAlert, // 弹出框
+    dtMessage, // 弹出框
     dtToast  // toast
 }

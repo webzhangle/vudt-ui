@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import dtButton from './dtButton/index.vue'
 // 弹窗组件
-import dtAlert from './dtAlert/dtAlert.vue'
-import dtAlertApi from './dtAlert/index.js'
-Vue.prototype.$alert = dtAlertApi
+import dtMessage from './dtMessage/dtMessage.vue'
+import dtMessageApi from './dtMessage/index.js'
+Vue.prototype.$message = dtMessageApi
 // toast组件
 import dtToast from './dtToast/dtToast.vue'
 import dtToastApi from './dtToast/index.js'
@@ -18,14 +18,23 @@ import dtRadio from './dtRadio/dtRadio.vue'
 import dtHeader from './dtHeader/dtHeader.vue'
 //进度条组件
 import dtProgress from './dtProgress/dtProgress.vue'
+//InputNumber 组件
+import dtInputNumber from './dtInputNumber/dtInputNumber.vue'
+//swiper组件
+import dtSwiper from './dtSwiper/swiper.vue'
+// picker 组件
+import dtPicker from './dtPicker/dtPicker.vue'
+
+
+
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)
     }
 }
-export const alert = {
+export const message = {
     install (Vue) {
-        Vue.component('dtAlert',dtAlert)
+        Vue.component('dtMessage',dtMessage)
     }
 }
 export const toast = {
@@ -58,4 +67,19 @@ export const progress = {
         Vue.component('dtProgress',dtProgress)
     }
 } 
+export const inputNumber = {
+    install (Vue) {
+        Vue.component('dtInputNumber',dtInputNumber)
+    }
+}
+export const swiper = {
+    install (Vue) {
+        Vue.component('dtSwiper',dtSwiper)
+    }
+}
+export const picker = {
+    install (Vue) {
+        Vue.component('dtPicker',dtPicker)
+    }
+}
 

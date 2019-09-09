@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-    name : 'dt-alert',
+    name : 'dt-message',
     props: {
         show1: {
             type:Boolean,
@@ -66,5 +66,5 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import url('./dtAlert');
+@import url('./dtMessage.less');
 </style>

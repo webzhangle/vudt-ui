@@ -1,6 +1,6 @@
 <template>
     <div>
-        <dt-alert :show1 = "show1" title="信息" content="消息已成功发送" @cancel="cancel" @confirm="confirm" />
+        <dt-message :show1 = "show1" title="信息" content="消息已成功发送" @cancel="cancel" @confirm="confirm" />
         <dt-button reverse @click.native="message1">alert按钮</dt-button>
         <dt-button reverse @click.native="message2">confirm 提示框</dt-button>
         <dt-button reverse @click.native="message3">prompt 提示框</dt-button>
@@ -8,9 +8,9 @@
 </template>
 <script>
 import Vue from 'vue'
-import {button,alert} from '@/components/index';
+import {button,message} from '@/components/index';
 Vue.use(button)
-Vue.use(alert)
+Vue.use(message)
 export default {
     data () {
         return {
@@ -24,19 +24,19 @@ export default {
             console.log(2)
         },
         message1 () {
-            this.$alert({
+            this.$message({
                 title:'提示信息',
                 messageType: 1
             })
         },
         message2 () {
-            this.$alert({
+            this.$message({
                 title:'提示信息',
                 messageType: 2
             })
         },
         message3 () {
-            this.$alert({
+            this.$message({
                 title:'提示信息',
                 messageType: 3,
             }).then((val)=>{

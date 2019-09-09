@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Index from '@/pages/index'
 import Button from '@/pages/button'
-import Alert from '@/pages/Alert'
+import Message from '@/pages/Message'
 import Toast from '@/pages/Toast'
 import Loading from '@/pages/Loading'
 import Switch from '@/pages/switch'
@@ -9,19 +10,27 @@ import CheckBox from '@/pages/checkBox'
 import Radio from '@/pages/radio'
 import Header from '@/pages/header'
 import Progress from '@/pages/progress'
+import inputNumber from '@/pages/inputNumber'
+import Swiper from '@/pages/swiper'
+import Picker from '@/pages/picker'
 Vue.use(Router)
 
 export default new Router({
     routes: [
+        {
+          path: '/',
+          name: 'Index',
+          component: Index
+        },
         {
           path: '/Button',
           name: 'Button',
           component: Button
         },
         {
-          path: '/Alert',
-          name: 'Alert',
-          component: Alert
+          path: '/Message',
+          name: 'Message',
+          component: Message
         },
         {
           path: '/Toast',
@@ -57,6 +66,21 @@ export default new Router({
           path: '/Progress',
           name: 'Progress',
           component: Progress
+        },
+        {
+          path: '/inputNumber',
+          name: 'inputNumber',
+          component: inputNumber
+        },
+        {
+          path: '/Swiper',
+          name: 'Swiper',
+          component: Swiper
+        },
+        {
+          path: '/Picker',
+          name: 'Picker',
+          component: Picker
         }
     ]
 })

@@ -1,6 +1,8 @@
+* {margin: 0;padding: 0};
 @pramry : #13BF7A;
 @border-radius : 6px;
 @linearGradient : linear-gradient(to right, #01BC78 , #009B63);
+@default: #333333;
 // button样式
 @default-color : #F8F8F8;
 @default-color-active : #fff;
@@ -20,3 +22,41 @@
 
 //alert样式
 @alert-border-radius : @border-radius;
+
+
+
+@namespace: vux;
+@theme-color: #04BE02;
+@button-mini-line-height: 2.3;
+/**
+* en: the background color of the warn type
+* zh-CN: warn类型的背景颜色
+*/
+@button-warn-bg-color: #E64340;
+
+/**
+* en: the background color of the primary type
+* zh-CN: primary类型的背景颜色
+*/
+@button-primary-bg-color: #1AAD19;
+
+
+
+/**
+* swipeout
+*/
+@swipeout-button-primary-bg-color: @button-primary-bg-color;
+@swipeout-button-warn-bg-color: @button-warn-bg-color;
+@swipeout-button-default-bg-color: #c8c7cd;
+
+@swipeout-content-bg-color: #FFF;
+@swipeout-button-font-color: #FFF;
+
+/**
+* Cell
+
+/**
+* Swiper
+*/
+@swiper-indicator-active-color: @theme-color;
+

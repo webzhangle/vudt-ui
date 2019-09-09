@@ -1,0 +1,32 @@
+@import '../../styles/config';
+.dt-input-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >p {
+        margin-right: 15px;
+    }
+    ul {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            display: flex;
+            p {
+                width: 50px;
+                text-align: center;
+            }
+        }
+    }
+    .svg-icon {
+        width: 20px;
+        height: 20px;
+        color: @pramry;
+    }
+    .add,.reduce {
+        .svg-icon {
+            color: #333;
+        }
+    }
+}

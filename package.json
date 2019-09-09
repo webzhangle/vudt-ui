@@ -1,6 +1,6 @@
 {
   "name": "vudt-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Vue.js project",
   "author": "zhangle <759728395@qq.com>",
   "private": false,
@@ -14,8 +14,12 @@
     "build": "webpack --display-error-details --config webpack.config.js"
   },
   "dependencies": {
+    "better-scroll": "^1.15.2",
+    "mpvue-picker": "^2.1.6",
     "reset.less": "^1.0.5",
     "vue": "^2.5.2",
+    "vue-awesome-picker": "^1.1.0",
+    "vue-pickers": "^1.1.5",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
