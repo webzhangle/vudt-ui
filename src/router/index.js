@@ -13,6 +13,7 @@ import Progress from '@/pages/progress'
 import inputNumber from '@/pages/inputNumber'
 import Swiper from '@/pages/swiper'
 import Picker from '@/pages/picker'
+import Tab from '@/pages/tab'
 Vue.use(Router)
 
 export default new Router({
@@ -81,6 +82,11 @@ export default new Router({
           path: '/Picker',
           name: 'Picker',
           component: Picker
+        },
+        {
+          path: '/Tab',
+          name: 'Tab',
+          component: Tab
         }
     ]
 })
