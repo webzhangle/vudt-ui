@@ -69,14 +69,14 @@ export default {
       if (this.hasReady) {
         const nav = this.$refs.nav
         const count = this.scrollable ? (nav.offsetWidth / this.$children[this.currentIndex || 0].$el.getBoundingClientRect().width) : this.number
-        return `${this.currentIndex * (100 / count)}%`
+        return `${this.currentIndex * (100 / count) + 20/count}%`
       }
     },
     barRight () {
       if (this.hasReady) {
         const nav = this.$refs.nav
         const count = this.scrollable ? (nav.offsetWidth / this.$children[this.currentIndex || 0].$el.getBoundingClientRect().width) : this.number
-        return `${(count - this.currentIndex - 1) * (100 / count)}%`
+        return `${(count - this.currentIndex - 1) * (100 / count) + 20/count}%`
       }
     },
     // when prop:custom-bar-width
@@ -135,7 +135,7 @@ export default {
       let count = 0
       // scroll animation
       const step = () => {
-        const scrollDuration = 15
+        const scrollDuration = 30
         const nav = this.$refs.nav
         nav.scrollLeft += (currentIndexTab.offsetLeft - (nav.offsetWidth - currentIndexTab.offsetWidth) / 2 - nav.scrollLeft) / scrollDuration
         if (++count < scrollDuration) {
