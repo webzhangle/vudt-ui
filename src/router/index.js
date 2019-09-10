@@ -14,6 +14,8 @@ import inputNumber from '@/pages/inputNumber'
 import Swiper from '@/pages/swiper'
 import Picker from '@/pages/picker'
 import Tab from '@/pages/tab'
+import TabBar from '@/pages/tabBar'
+
 Vue.use(Router)
 
 export default new Router({
@@ -87,6 +89,11 @@ export default new Router({
           path: '/Tab',
           name: 'Tab',
           component: Tab
+        },
+        {
+          path: '/TabBar',
+          name: 'TabBar',
+          component: TabBar
         }
     ]
 })

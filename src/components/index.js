@@ -25,8 +25,10 @@ import dtSwiper from './dtSwiper/swiper.vue'
 // picker 组件
 import dtPicker from './dtPicker/dtPicker.vue'
 //tab 组件
-
 import Tab from './dtTab/index.js'
+// tabBar组件
+import TabBar from './dtTabbar/index.js'
+
 
 export const button = {
     install (Vue) {
@@ -94,3 +96,13 @@ export const tabItem = {
     }
 }
 
+export const tabBar = {
+    install (Vue) {
+        Vue.component('dtTabbar',TabBar.DtTabbar)
+    }
+}
+export const tabBarItem = {
+    install (Vue) {
+        Vue.component('dtTabbarItem',TabBar.DtTabbarItem)
+    }
+}
