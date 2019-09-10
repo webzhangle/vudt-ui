@@ -1,20 +1,20 @@
 <template>
   <div
-    class="vux-tab-wrap"
-    :class="barPosition === 'top' ? 'vux-tab-bar-top' : ''">
-    <div class="vux-tab-container">
+    class="dt-tab-wrap"
+    :class="barPosition === 'top' ? 'dt-tab-bar-top' : ''">
+    <div class="dt-tab-container">
       <div
-        class="vux-tab"
-        :class="[{'vux-tab-no-animate': !animate},{ scrollable }]"
+        class="dt-tab"
+        :class="[{'dt-tab-no-animate': !animate},{ scrollable }]"
         ref="nav">
         <slot></slot>
         <div
           v-if="animate"
-          class="vux-tab-ink-bar"
+          class="dt-tab-ink-bar"
           :class="barClass"
           :style="barStyle">
           <span
-            class="vux-tab-bar-inner"
+            class="dt-tab-bar-inner"
             :style="innerBarStyle"
             v-if="customBarWidth"></span>
         </div>
@@ -104,8 +104,8 @@ export default {
     },
     barClass () {
       return {
-        'vux-tab-ink-bar-transition-forward': this.direction === 'forward',
-        'vux-tab-ink-bar-transition-backward': this.direction === 'backward'
+        'dt-tab-ink-bar-transition-forward': this.direction === 'forward',
+        'dt-tab-ink-bar-transition-backward': this.direction === 'backward'
       }
     },
     scrollable () {
@@ -150,9 +150,8 @@ export default {
 
 
 <style lang="less">
-@import '../../styles/variable.less';
-
-@prefixClass: vux-tab;
+@import url('../../styles/config.less');
+@prefixClass: dt-tab;
 @easing-in-out: cubic-bezier(0.35, 0, 0.25, 1);
 @effect-duration: .3s;
 
@@ -178,20 +177,20 @@ export default {
 
 }
 
-.vux-tab-bar-top .@{prefixClass} {
+.dt-tab-bar-top .@{prefixClass} {
   &-ink-bar {
     top: 0;
   }
 }
 
-.vux-tab {
+.dt-tab {
   display: flex;
   background-color: #fff;
   height: 44px;
   position: relative;
 }
 
-.vux-tab button {
+.dt-tab button {
   padding: 0;
   border: 0;
   outline: 0;
@@ -199,7 +198,7 @@ export default {
   appearance: none;
 }
 
-.vux-tab .vux-tab-item {
+.dt-tab .dt-tab-item {
   display: block;
   flex: 1;
   width: 100%;
@@ -213,32 +212,32 @@ export default {
   color: @tab-text-default-color;
 }
 
-.vux-tab .vux-tab-item.vux-tab-selected {
+.dt-tab .dt-tab-item.dt-tab-selected {
   color: @tab-text-active-color;
   border-bottom: 3px solid @tab-text-active-color;
 }
 
-.vux-tab-bar-top {
-  .vux-tab .vux-tab-item {
+.dt-tab-bar-top {
+  .dt-tab .dt-tab-item {
     background: linear-gradient(180deg, #e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)) top left no-repeat;
     background-size: 100% 1px;
   }
-  .vux-tab .vux-tab-item.vux-tab-selected {
+  .dt-tab .dt-tab-item.dt-tab-selected {
     border-bottom: none;
     border-top: 3px solid @tab-text-active-color;
   }
 }
 
-.vux-tab .vux-tab-item.vux-tab-disabled {
+.dt-tab .dt-tab-item.dt-tab-disabled {
   color: @tab-text-disabled-color;
 }
 
-.vux-tab.vux-tab-no-animate .vux-tab-item.vux-tab-selected {
+.dt-tab.dt-tab-no-animate .dt-tab-item.dt-tab-selected {
   background: 0 0;
 }
 
 /** when=prop:custom-bar-width **/
-.vux-tab-bar-inner {
+.dt-tab-bar-inner {
   display: block;
   background-color: @tab-text-active-color;
   margin: auto;
@@ -246,7 +245,7 @@ export default {
   transition: width 0.3s @easing-in-out;
 }
 
-.vux-tab-item-badge {
+.dt-tab-item-badge {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -263,12 +262,12 @@ export default {
   vertical-align: middle;
 }
 
-.vux-tab-wrap {
+.dt-tab-wrap {
   position: relative;
   padding-top: 44px;
 }
 
-.vux-tab-container {
+.dt-tab-container {
   height: 44px;
   top: 0;
   left: 0;
@@ -289,12 +288,12 @@ export default {
   display: none;
 }
 
-.scrollable .vux-tab-ink-bar {
+.scrollable .dt-tab-ink-bar {
   bottom: 17px;
   position: absolute;
 }
 
-.scrollable .vux-tab-item {
+.scrollable .dt-tab-item {
   flex: 0 0 22%;
 }
 

@@ -1,9 +1,9 @@
 <template>
   <div
-    class="vux-tab-item"
+    class="dt-tab-item"
     :class="[currentSelected ? activeClass : '', {
-      'vux-tab-selected': currentSelected,
-      'vux-tab-disabled': disabled 
+      'dt-tab-selected': currentSelected,
+      'dt-tab-disabled': disabled 
     }]"
     :style="style"
     @click="onItemClick">
@@ -13,7 +13,7 @@
         background: badgeBackground,
         color: badgeColor
       }"
-      class="vux-tab-item-badge"
+      class="dt-tab-item-badge"
       v-if="typeof badgeLabel !== 'undefined' && badgeLabel !== ''">
     {{ badgeLabel }}</span>
   </div>
