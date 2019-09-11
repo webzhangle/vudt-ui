@@ -27,6 +27,7 @@ export default {
     methods: {
         checkboxChange (e) {
             this.checkedBox = this.$refs.checkbox.checked
+            this.$emit('checkedBoxFun',this.checkedBox)
         }
     }
     

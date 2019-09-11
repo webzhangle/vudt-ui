@@ -15,7 +15,9 @@ import Swiper from '@/pages/swiper'
 import Picker from '@/pages/picker'
 import Tab from '@/pages/tab'
 import TabBar from '@/pages/tabBar'
-
+import Input from '@/pages/input'
+import Upload from '@/pages/upload'
+import List from '@/pages/list'
 Vue.use(Router)
 
 export default new Router({
@@ -94,6 +96,21 @@ export default new Router({
           path: '/TabBar',
           name: 'TabBar',
           component: TabBar
+        },
+        {
+          path: '/Input',
+          name: 'Input',
+          component: Input
+        },
+        {
+          path: '/Upload',
+          name: 'Upload',
+          component: Upload
+        },
+        {
+          path: '/List',
+          name: 'List',
+          component: List
         }
     ]
 })

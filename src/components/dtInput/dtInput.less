@@ -1,0 +1,48 @@
+@import '../../styles/config';
+.border-radius {
+    border-radius: @border-radius;
+}
+.margin-left {
+    margin-left: 12px;
+}
+.margin-right {
+    margin-right: 12px;
+}
+.disabled {
+    background-color: #CCCCCC!important;
+}
+.dt-input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 12px;
+    color: @default;
+    background-color: #fff;
+    input {
+        border: none;
+        width: 100%;
+        background: transparent;
+        &:focus {
+            outline:none;
+        }
+        &::-webkit-input-placeholder {
+            color: #999;
+        }
+        &::-moz-placeholder {
+            color: #999;
+        }
+        &::-ms-input-placeholder {
+            color: #999;
+        }
+    }
+    .svg-icon{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+        overflow: hidden;
+        color: #CCCCCC;
+        margin: auto;
+    }
+}

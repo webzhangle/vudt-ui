@@ -28,7 +28,12 @@ import dtPicker from './dtPicker/dtPicker.vue'
 import Tab from './dtTab/index.js'
 // tabBar组件
 import TabBar from './dtTabbar/index.js'
-
+// input 组件
+import dtInput from './dtInput/dtInput.vue'
+// upload 上传
+import dtUpload from './dtUpload/dtUpload.vue'
+// 动态list
+import dtList from './dtList/dtList.vue'
 
 export const button = {
     install (Vue) {
@@ -104,5 +109,21 @@ export const tabBar = {
 export const tabBarItem = {
     install (Vue) {
         Vue.component('dtTabbarItem',TabBar.DtTabbarItem)
+    }
+}
+
+export const input = {
+    install (Vue) {
+        Vue.component('dtInput',dtInput)
+    }
+}
+export const upload = {
+    install (Vue) {
+        Vue.component('dtUpload',dtUpload)
+    }
+}
+export const list = {
+    install (Vue) {
+        Vue.component('dtList',dtList)
     }
 }

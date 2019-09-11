@@ -29,11 +29,11 @@
     </div>
 </template>
 <script>
-import dtButton from '@/components/dtButton'
+import Vue from 'vue'
+import { button } from '@/components/index';
+Vue.use(button)
 export default {
-    components: {
-        dtButton
-    },
+
     methods : {
         click () {
             alert('我被点击了')
