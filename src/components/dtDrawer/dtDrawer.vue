@@ -125,8 +125,11 @@ export default {
 .dt-drawer {
  /* 遮罩 */
  height: 100vh;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
  .mask-show {
-  position: fixed;
+  position: fixed!important;
   top: 0;
   left: 0;
   width: 100%;
@@ -142,7 +145,7 @@ export default {
  }
  /* 滑块 */
  .main {
-  position: fixed;
+  position: fixed!important;
   z-index: 10;
   top: 0;
   height: 100%;

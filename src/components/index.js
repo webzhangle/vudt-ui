@@ -39,8 +39,6 @@ import dtBadge from './dtBadge/dtBadge.vue'
 //CardList
 import dtCardList from './dtCardList/dtCardList.vue'
 //Drawer
-// import dtDrawerApi from './dtDrawer/index.js'
-// Vue.prototype.$drawer = dtDrawerApi
 import dtDrawer from './dtDrawer/dtDrawer.vue'
 // step
 import dtStep from './dtStep/dtStep.vue'
