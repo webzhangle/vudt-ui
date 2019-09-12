@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="dt-message">
         <div class="dt-mask" v-show="show"></div>
         <transition name="fade">
             <div class="dt-dialog" style="" v-show="show">

@@ -1,4 +1,4 @@
-import AwesomePicker from './vue-awesome-picker.vue'
+import AwesomePicker from './picker.vue'
 const picker = {
   install (Vue) {
     Vue.component(AwesomePicker.name, AwesomePicker)
