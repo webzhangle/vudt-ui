@@ -1,0 +1,13 @@
+category: 基础组件
+tags: 单选
+tips: @getVal="getVal" 获取选中的值
+props:
+  value:
+    type: String
+    default: ' '
+    zh-CN: 按钮类型，可选值为 `default`,`primary`,`warn`
+  checked:
+    type: Boolean
+    default: false
+    zh-CN: 是否处于选中状态
+  

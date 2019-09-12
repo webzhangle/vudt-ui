@@ -1,0 +1,21 @@
+category: 基础组件
+tags: 计数器
+tips: @getValue="getValue" 获取计数器的返回值
+props:
+  init:
+    type: Number
+    default: 0
+    description: 计数器的初始值
+  min:
+    type: Number
+    default: -Infinity
+    zh-CN: 最小值
+  max:
+    type: Number
+    default: Infinity
+    zh-CN: 最大值
+  text:
+    type: String
+    default: ''
+    zh-CN: 计数器前面的显示文字
+

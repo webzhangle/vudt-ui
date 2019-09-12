@@ -17,10 +17,10 @@ Vue.use(header)
 export default {
     methods: {
         leftClick () {
-           console.log(123)
+           console.log('点击了左侧返回箭头')
         },
         rightClick () {
-            alert(2)
+            alert('点击了右侧图标')
         }
     }
 }

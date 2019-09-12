@@ -1,7 +1,7 @@
 <template>
     <div class="dt-toast" v-show="show">
         <div class="dt-toast-content" :class="classs">
-            <svg-icon :icon-class="type" v-if="type != ''"></svg-icon>
+            <svg-icon :icon-class="type" v-if="type != ''" :class="type==='loading'? 'dt-loading':''"></svg-icon>
             <p>{{ text }}</p>
         </div>
     </div>

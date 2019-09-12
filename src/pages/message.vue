@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div class="message">
         <dt-message :show1 = "show1" title="信息" content="消息已成功发送" @cancel="cancel" @confirm="confirm" />
-        <dt-button reverse @click.native="message1">alert按钮</dt-button>
-        <dt-button reverse @click.native="message2">confirm 提示框</dt-button>
-        <dt-button reverse @click.native="message3">prompt 提示框</dt-button>
+        <dt-button type="primary" @click.native="message1">alert按钮</dt-button>
+        <dt-button type="primary" @click.native="message2">confirm 提示框</dt-button>
+        <dt-button type="warn" @click.native="message3">prompt 提示框</dt-button>
     </div>
 </template>
 <script>
@@ -49,5 +49,11 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+.message {
+    padding: 30px;
+    .dt-btn{
+        margin-bottom: 30px;
+    }
+}
 
 </style>

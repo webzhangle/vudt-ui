@@ -5,10 +5,11 @@
     left:0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, .6);
     .dt-toast-content {
         padding: 12px 8px;
         border-radius: @alert-border-radius;
@@ -26,5 +27,22 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+    @-webkit-keyframes weuiLoading {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+    .dt-loading {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        animation: weuiLoading 1s steps(12, end) infinite;
+        // background: transparent url('../../assets/images/loading.png') no-repeat;
+        background-size: 100%;
     }
 }

@@ -29,7 +29,7 @@ export default {
             type: Boolean,
             default: false,
         },
-        reverse: {
+        plain: {
             type: Boolean,
             default: false,
         },
@@ -57,7 +57,7 @@ export default {
         },
         classes () {
             return [
-                !this.reverse ? 'dt-btn_' + this.type : 'dt-reverse-btn_' + this.type,
+                !this.plain ? 'dt-btn_' + this.type : 'dt-plain-btn_' + this.type,
                 this.showLoading? 'dt-btn_loading' : '',
                 this.mini? 'dt-btn_mini' : '',
                 this.middle? 'dt-btn_middle' : ''

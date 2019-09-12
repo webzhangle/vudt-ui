@@ -1,0 +1,16 @@
+category: 基础组件
+tags: 头部组件
+tips:  @leftClick="leftClick" 监听左侧箭头点击的处理 不写则返回上一页 ; @rightClick="rightClick" 监听右侧点击的处理 用slot添加右侧的图标
+props:
+  title:
+    type: String
+    default: '标题'
+  leftText:
+    type: String
+    default: false
+    zh-CN: 是否显示返回箭头后面的文字
+  leftHide:
+    type: Boolean
+    default: false
+    zh-CN: 是否显示返回箭头
+  

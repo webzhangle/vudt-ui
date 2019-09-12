@@ -1,6 +1,6 @@
 <template>
     <div class="dt-radio-container">
-        <input class="dt-radio" id="radio" name="radio" type="radio"  @change="radioChange" :value="value">
+        <input class="dt-radio" name="radio" type="radio" @change="radioChange" :value="value">
         <svg-icon icon-class="radio" v-show="checked"></svg-icon>
         <svg-icon icon-class="unRadio" v-show="!checked"></svg-icon>
     </div>

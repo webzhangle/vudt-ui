@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ccc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="组件_9_3" data-name="组件 9 – 3" class="cls-2">
+    <rect id="矩形_1650" data-name="矩形 1650" class="cls-1" width="20" height="20"/>
+    <path id="联合_12" data-name="联合 12" class="cls-3" d="M6.54,14.319.53,8.309a.751.751,0,0,1,0-1.061l6.01-6.01A.75.75,0,1,1,7.6,2.3l-5.48,5.48,5.48,5.48a.75.75,0,1,1-1.061,1.06Z" transform="translate(14 17.778) rotate(180)"/>
+  </g>
+</svg>

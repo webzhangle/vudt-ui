@@ -1,0 +1,91 @@
+@import '../../styles/config';
+/*cardlist*/
+.dt-card-list {
+    border-radius: @border-radius;
+    padding: 12px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 1px solid #EDEDED;
+    .header {
+
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        .icon-left {
+            .svg-icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        li {
+            font-size: 14px;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 15px;
+                color: @default;
+                text-overflow: ellipsis;   //溢出文本时显示省略标记
+                overflow: hidden;
+                flex: 1;
+            }
+            .dt-badge {
+                margin-left: 8px;
+            }
+            input {
+                border: none;
+            }
+            input {
+                border: none;
+                
+            }
+            input[disabled] {
+                background:#fff;
+            }
+        }
+        .title {
+            white-space: nowrap;   //强制一行显示
+            text-overflow: ellipsis;   //溢出文本时显示省略标记
+            overflow: hidden;
+            flex: 1;
+            margin: 0 12px;
+        }
+        .center {
+            flex: 1;
+            margin: 0 12px;
+            margin-right: 0;
+        }
+        .icon-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+            .svg-icon {
+                width: 20px;
+                height: 20px;
+            }
+            
+        }
+        .name {
+            width: 70px;
+            color: #666;
+        }
+    }
+    .no-right {
+        justify-content: space-between;
+        .center {
+            p {
+                width: 100%;
+                text-align: right;
+            }
+            input {
+                width:100%;
+                text-align: right;
+            }
+        }
+    }
+}

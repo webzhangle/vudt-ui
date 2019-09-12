@@ -1,0 +1,23 @@
+category: 基础组件
+tags: 按钮
+tips: @input监听得到的输入值
+props:
+  borderRadius:
+    type: String
+    default: "0"
+    zh-CN: 设置组件是否显示圆角及圆角的大小
+  disabled:
+    type: Boolean
+    default: false
+    zh-CN: 是否可以输入
+  isSearch:
+    type: Boolean
+    default: false
+    zh-CN: 是否显示搜索按钮
+  isClear:
+    type: Boolean
+    default: false
+    zh-CN: 是否是显示关闭按钮
+  height:
+    type: String
+    zh-CN: 组件的高度

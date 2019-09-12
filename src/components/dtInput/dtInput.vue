@@ -49,7 +49,7 @@ export default {
         },
         dtInputContainer () {
             return [
-                this.borderRadius ? 'border-radius' : '',
+                this.borderRadius && this.borderRadius != "0" ? 'border-radius' : '',
                 this.disabled ? 'disabled' : '',
             ] 
         }

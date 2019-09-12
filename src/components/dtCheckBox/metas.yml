@@ -1,0 +1,8 @@
+category: 基础组件
+tags: 多选框
+tips: @checkedBoxFun($event,index) 获取点击的事件对象和相应的索引 
+props:
+  checked:
+    type: Boolean
+    default: false
+    zh-CN: '是否是选中状态'

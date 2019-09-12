@@ -1,0 +1,9 @@
+category: 基础组件
+tags: 开关
+tips: @checked="checked" 选中的处理函数 @unChecked="unChecked" 未选中的处理函数
+props:
+  checked:
+    type: Boolean
+    default: false
+    zh-CN: 开关是否开启
+  

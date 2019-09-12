@@ -1,0 +1,17 @@
+category: 基础组件
+tags: toast
+tips: @checked="checked" 选中的处理函数 @unChecked="unChecked" 未选中的处理函数 this.$toast.close() 关闭toast
+props:
+  text:
+    type: String
+    default: 空
+    zh-CN: toast提示文言
+  duration:
+    type: String
+    default: 空
+    zh-CN: toast显示的时间
+  type:
+    type: String
+    default: 空
+    zh-CN: toast显示的时间
+  

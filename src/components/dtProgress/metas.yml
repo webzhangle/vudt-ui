@@ -1,0 +1,8 @@
+category: 基础组件
+tags: 进度条
+props:
+  percentage:
+    type: String
+    default: '0'
+    zh-CN: 进度条的百分比
+  

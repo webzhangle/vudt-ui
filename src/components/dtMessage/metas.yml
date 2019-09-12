@@ -1,0 +1,17 @@
+category: 基础组件
+tags: 弹出框
+tips: Promise封装 确定在then中执行 取消在catch中执行
+props:
+  title:
+    type: String
+    default: '信息'
+    zh-CN: 弹出框的标题
+  content:
+    type: String
+    default: 你好
+    zh-CN: 弹出框的内容
+  messageType:
+    type: String
+    default: 1
+    zh-CN: 弹出框的类型 1，alert  2、confirm 提示框 3、prompt 提示框
+  

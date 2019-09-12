@@ -1,0 +1,17 @@
+category: 基础组件
+tags: 按钮
+# tips: @click.native 进行点击事件函数处理
+props:
+  list:
+    type: Array
+    default: []
+    zh-CN: 数据来源
+  head:
+    type: Boolean
+    default: false
+    zh-CN: true 展示头像， false 展示图片
+  CheckBox:
+    type: Boolean
+    default: false
+    zh-CN: 是否展示多选框
+  

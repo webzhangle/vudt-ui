@@ -1,6 +1,6 @@
 {
   "name": "vudt-ui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Vue.js project",
   "author": "zhangle <759728395@qq.com>",
   "private": false,
@@ -11,6 +11,7 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
+    "build1": "node build/build.js"  ,
     "build": "webpack --display-error-details --config webpack.config.js"
   },
   "dependencies": {
@@ -40,7 +41,7 @@
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
@@ -61,6 +62,9 @@
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "style-loader": "^1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "svg-sprite-loader": "^4.1.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
@@ -83,3 +87,4 @@
     "not ie <= 8"
   ]
 }
+

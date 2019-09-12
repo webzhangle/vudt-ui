@@ -31,7 +31,51 @@ export default {
                 {
                     name: '计数器',
                     link: 'inputNumber'
-                }
+                },
+                {
+                    name: 'Swiper',
+                    link: 'Swiper'
+                },
+                {
+                    name: 'Picker',
+                    link: 'Picker'
+                },
+                {
+                    name: 'Tab',
+                    link: 'Tab'
+                },
+                {
+                    name: 'TabBar',
+                    link: 'TabBar'
+                },
+                {
+                    name: 'Input',
+                    link: 'Input'
+                },
+                {
+                    name: 'Upload',
+                    link: 'Upload'
+                },
+                {
+                    name: 'List',
+                    link: 'List'
+                },
+                {
+                    name: 'CardList',
+                    link: 'CardList'
+                },
+                {
+                    name: 'Drawer',
+                    link: 'Drawer'
+                },
+                {
+                    name: 'Header',
+                    link: 'Header'
+                },
+                {
+                    name: 'Header',
+                    link: 'Header'
+                },
             ]
         }
     }

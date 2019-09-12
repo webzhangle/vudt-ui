@@ -1,7 +1,7 @@
 <template>
     <div class="input">
         <dt-input></dt-input>
-        <dt-input borderRadius="6" />
+        <dt-input borderRadius="0" />
         <dt-input borderRadius="6" disabled/>
         <dt-input isSearch />
         <dt-input isClear @input="input"/>
@@ -27,6 +27,8 @@ export default {
         background: #333;
         padding: 30px;
         box-sizing: border-box;
+        height: 100vh;
+        overflow: auto;
         .dt-input {
             margin-bottom: 15px;
         }

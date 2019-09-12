@@ -23,17 +23,28 @@ import dtInputNumber from './dtInputNumber/dtInputNumber.vue'
 //swiper组件
 import dtSwiper from './dtSwiper/swiper.vue'
 // picker 组件
-import dtPicker from './dtPicker/dtPicker.vue'
+// import dtPicker from './dtPicker/dtPicker.vue'
 //tab 组件
 import Tab from './dtTab/index.js'
 // tabBar组件
-import TabBar from './dtTabbar/index.js'
+import dtTabBar from './dtTabbar/dtTabbar.vue'
 // input 组件
 import dtInput from './dtInput/dtInput.vue'
 // upload 上传
 import dtUpload from './dtUpload/dtUpload.vue'
 // 动态list
 import dtList from './dtList/dtList.vue'
+//badge
+import dtBadge from './dtBadge/dtBadge.vue'
+//CardList
+import dtCardList from './dtCardList/dtCardList.vue'
+//Drawer
+// import dtDrawerApi from './dtDrawer/index.js'
+// Vue.prototype.$drawer = dtDrawerApi
+import dtDrawer from './dtDrawer/dtDrawer.vue'
+// step
+import dtStep from './dtStep/dtStep.vue'
+
 
 export const button = {
     install (Vue) {
@@ -85,11 +96,24 @@ export const swiper = {
         Vue.component('dtSwiper',dtSwiper)
     }
 }
+
+
+
+// export const picker = {
+//     install (Vue) {
+//         Vue.component('dtPicker',dtPicker)
+//     }
+// }
+import dtPicker from './picker/picker.vue'
 export const picker = {
-    install (Vue) {
-        Vue.component('dtPicker',dtPicker)
-    }
+  install (Vue) {
+    Vue.component(dtPicker.name, dtPicker)
+  }
 }
+// if (typeof window !== 'undefined' && window.Vue) {
+//   window.Vue.use(picker)
+// }
+
 export const tab = {
     install (Vue) {
         Vue.component('dtTab',Tab.Tab)
@@ -103,12 +127,7 @@ export const tabItem = {
 
 export const tabBar = {
     install (Vue) {
-        Vue.component('dtTabbar',TabBar.DtTabbar)
-    }
-}
-export const tabBarItem = {
-    install (Vue) {
-        Vue.component('dtTabbarItem',TabBar.DtTabbarItem)
+        Vue.component('dtTabbar',dtTabBar)
     }
 }
 
@@ -127,3 +146,25 @@ export const list = {
         Vue.component('dtList',dtList)
     }
 }
+export const badge = {
+    install (Vue) {
+        Vue.component('dtBadge',dtBadge)
+    }
+}
+export const cardlist = {
+    install (Vue) {
+        Vue.component('dtCardList',dtCardList)
+    }
+}
+export const drawer = {
+    install (Vue) {
+        Vue.component('dtDrawer',dtDrawer)
+    }
+}
+export const step = {
+    install (Vue) {
+        Vue.component('dtStep',dtStep)
+    }
+}
+
+

@@ -18,6 +18,9 @@ import TabBar from '@/pages/tabBar'
 import Input from '@/pages/input'
 import Upload from '@/pages/upload'
 import List from '@/pages/list'
+import CardList from '@/pages/cardlist'
+import Drawer from '@/pages/drawer'
+import Step from '@/pages/step'
 Vue.use(Router)
 
 export default new Router({
@@ -111,6 +114,22 @@ export default new Router({
           path: '/List',
           name: 'List',
           component: List
-        }
+        },
+        {
+          path: '/CardList',
+          name: 'CardList',
+          component: CardList
+        },
+        {
+          path: '/Drawer',
+          name: 'Drawer',
+          component: Drawer
+        },
+        {
+          path: '/Step',
+          name: 'Step',
+          component: Step
+        },
+        
     ]
 })

@@ -1,7 +1,14 @@
 <template>
-    <div>
-        <dt-radio :value="item.name" v-for="(item,index) in list" :key="index" @getVal="getVal" :checked="val==item.name"/>
-        {{val}}
+    <div class="radio">
+        <p>请选择一个你喜欢的水果！！！</p>
+        <ul>
+            <li v-for="(item,index) in list" :key="index">
+                <label for="">{{ item.name }}</label>
+                <dt-radio :value="item.name" @getVal="getVal" :checked="val==item.name"/>
+            </li>
+        </ul>
+        
+        <p>请选择的水果是 {{val}} ！</p>
     </div>
 </template>
 <script>
@@ -13,10 +20,13 @@ export default {
         return {
             list: [
                 {
-                    name : '123'
+                    name : '苹果'
                 },
                 {
-                    name : '456'
+                    name : '香蕉'
+                },
+                {
+                    name : '葡萄'
                 }
             ],
             val : ''
@@ -31,4 +41,28 @@ export default {
     }
 }
 </script>
+<style lang="less" scoped>
+.radio {
+    padding: 30px;
+    ul {
+        
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            label {
+                margin-right: 15px;
+            }
+        }
+    }
+    p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+    
+</style>
+
+
 

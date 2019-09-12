@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #ccc;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-2" width="20" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_1646" data-name="矩形 1646" class="cls-1" width="20" height="20" transform="translate(50 1136)"/>
+    </clipPath>
+  </defs>
+  <g id="组件_5_2" data-name="组件 5 – 2" class="cls-3">
+    <g id="蒙版组_883" data-name="蒙版组 883" class="cls-4" transform="translate(-50 -1136)">
+      <path id="拍照" class="cls-5" d="M18.273,6.467H3.247A1.512,1.512,0,0,0,1.741,7.973V18.429a1.512,1.512,0,0,0,1.506,1.506H18.263a1.512,1.512,0,0,0,1.506-1.506V7.973A1.509,1.509,0,0,0,18.273,6.467ZM10.765,17.782A4.581,4.581,0,1,1,15.347,13.2a4.589,4.589,0,0,1-4.581,4.581ZM17.743,9.32a.838.838,0,1,1,.838-.838A.833.833,0,0,1,17.743,9.32Zm-1.8-4.5a1.512,1.512,0,0,0-1.506-1.506H7.086A1.512,1.512,0,0,0,5.58,4.823V5.46H15.93l.011-.636Zm-5.175,5.938A2.439,2.439,0,1,0,13.2,13.2,2.439,2.439,0,0,0,10.765,10.762Z" transform="translate(49.245 1134.374)"/>
+    </g>
+  </g>
+</svg>
