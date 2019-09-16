@@ -8,7 +8,7 @@ let dtMessage = (obj) => {
             el: document.createElement('div')
         })
         MessageDom.title = obj.title || '信息' //设置title内容
-        MessageDom.content = obj.content || '稻田，你好' //设置content内容
+        MessageDom.content = obj.content || '国寿财' //设置content内容
         MessageDom.messageType = obj.messageType || '1' //设置messageType内容
         
         MessageDom.confirm = function () {
