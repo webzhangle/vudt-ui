@@ -24,6 +24,7 @@ import Step from '@/pages/step'
 import Table from '@/pages/table'
 import Annotation from '@/pages/annotation'
 import Container from '@/pages/container'
+import Word from '@/pages/Word'
 Vue.use(Router)
 
 export default new Router({
@@ -147,6 +148,11 @@ export default new Router({
           path: '/Container',
           name: 'Container',
           component: Container
+        },
+        {
+          path: '/Word',
+          name: 'Word',
+          component: Word
         }
     ]
 })

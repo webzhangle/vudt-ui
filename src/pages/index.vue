@@ -92,6 +92,10 @@ export default {
                     name: 'Container',
                     link: 'Container'
                 },
+                 {
+                    name: 'Word',
+                    link: 'Word'
+                },
             ]
         }
     }

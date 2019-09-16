@@ -19,5 +19,10 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-
+.container {
+    padding:30px;
+    .dt-annotation {
+        margin-bottom: 15px;
+    }
+}
 </style>

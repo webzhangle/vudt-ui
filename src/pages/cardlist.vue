@@ -10,6 +10,9 @@ import Vue from 'vue'
 import { cardlist } from '@/components/index';
 Vue.use(cardlist)
 export default {
+    mounted () {
+       
+    },
     data () {
         return {
             dataList1 : {

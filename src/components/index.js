@@ -48,7 +48,8 @@ import dtTable from './dtTable/dtTable.vue'
 import dtAnnotation from './dtAnnotation/dtAnnotation.vue'
 //container组件
 import dtContainer from './dtContainer/dtContainer.vue'
-
+// word组件
+import dtWord from './dtWord/dtWord.vue'
 export const button = {
     install (Vue) {
         Vue.component('dtButton',dtButton)
@@ -182,5 +183,10 @@ export const annotation = {
 export const container = {
     install (Vue) {
         Vue.component('dtContainer',dtContainer)
+    }
+}
+export const word = {
+    install (Vue) {
+        Vue.component('dtWord',dtWord)
     }
 }
