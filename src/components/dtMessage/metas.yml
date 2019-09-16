@@ -5,13 +5,13 @@ props:
   title:
     type: String
     default: '信息'
-    zh-CN: 弹出框的标题
+    discription: 弹出框的标题
   content:
     type: String
     default: 你好
-    zh-CN: 弹出框的内容
+    discription: 弹出框的内容
   messageType:
     type: String
     default: 1
-    zh-CN: 弹出框的类型 1，alert  2、confirm 提示框 3、prompt 提示框
+    discription: 弹出框的类型 1，alert  2、confirm 提示框 3、prompt 提示框
   

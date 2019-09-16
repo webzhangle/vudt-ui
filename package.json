@@ -19,8 +19,6 @@
     "mpvue-picker": "^2.1.6",
     "reset.less": "^1.0.5",
     "vue": "^2.5.2",
-    "vue-awesome-picker": "^1.1.0",
-    "vue-pickers": "^1.1.5",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

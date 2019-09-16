@@ -42,7 +42,12 @@ import dtCardList from './dtCardList/dtCardList.vue'
 import dtDrawer from './dtDrawer/dtDrawer.vue'
 // step
 import dtStep from './dtStep/dtStep.vue'
-
+// table 组件
+import dtTable from './dtTable/dtTable.vue'
+//annotation 组件
+import dtAnnotation from './dtAnnotation/dtAnnotation.vue'
+//container组件
+import dtContainer from './dtContainer/dtContainer.vue'
 
 export const button = {
     install (Vue) {
@@ -164,5 +169,18 @@ export const step = {
         Vue.component('dtStep',dtStep)
     }
 }
-
-
+export const table = {
+    install (Vue) {
+        Vue.component('dtTable',dtTable)
+    }
+}
+export const annotation = {
+    install (Vue) {
+        Vue.component('dtAnnotation',dtAnnotation)
+    }
+}
+export const container = {
+    install (Vue) {
+        Vue.component('dtContainer',dtContainer)
+    }
+}

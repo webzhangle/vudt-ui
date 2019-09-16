@@ -4,58 +4,58 @@ extra:
 props:
   list:
     type: Array
-    zh-CN: 轮播图片列表，如果有自定义样式需求，请使用 swiper-item(使用 swiper-item 时仅有2个的情况下不支持循环)
+    discription 轮播图片列表，如果有自定义样式需求，请使用 swiper-item(使用 swiper-item 时仅有2个的情况下不支持循环)
   direction:
     type: String
     default: horizontal
-    zh-CN: 方向
+    discription 方向
   show-dots:
     type: Boolean
     default: true
-    zh-CN: 是否显示提示点
+    discription 是否显示提示点
   show-desc-mask:
     type: Boolean
     default: true
-    zh-CN: 是否显示描述半透明遮罩
+    discription 是否显示描述半透明遮罩
   dots-position:
     type: String
     default: right
-    zh-CN: 提示点位置
+    discription 提示点位置
   dots-class:
-    zh-CN: 提示className
+    discription 提示className
   auto:
     type: Boolean
     default: false
-    zh-CN: 是否自动轮播
+    discription 是否自动轮播
   loop:
     type: Boolean
     default: false
-    zh-CN: 是否循环
+    discription 是否循环
   interval:
     type: Number
     default: 3000
-    zh-CN: 轮播停留时长
+    discription 轮播停留时长
   threshold:
     type: Number
     default: 50
-    zh-CN: 当滑动超过这个距离时才滑动
+    discription 当滑动超过这个距离时才滑动
   duration:
     type: Number
     default: 300
-    zh-CN: 切换动画时间
+    discription 切换动画时间
   height:
     type: String
     default: 180px
     en: height value
-    zh-CN: '高度值。如果为`100%`宽度并且知道宽高比，可以设置`aspect-ratio`自动计算高度'
+    discription '高度值。如果为`100%`宽度并且知道宽高比，可以设置`aspect-ratio`自动计算高度'
   aspect-ratio:
     type: Number
-    zh-CN: 用以根据当前可用宽度计算高度值
+    discription 用以根据当前可用宽度计算高度值
   min-moving-distance:
     type: Number
     default: 0
-    zh-CN: 超过这个距离时才滑动
+    discription 超过这个距离时才滑动
   v-model:
     type: Number
     default: 0
-    zh-CN: index 绑定，使用`v-model`，一般不需要绑定
+    discription index 绑定，使用`v-model`，一般不需要绑定

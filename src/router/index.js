@@ -21,6 +21,9 @@ import List from '@/pages/list'
 import CardList from '@/pages/cardlist'
 import Drawer from '@/pages/drawer'
 import Step from '@/pages/step'
+import Table from '@/pages/table'
+import Annotation from '@/pages/annotation'
+import Container from '@/pages/container'
 Vue.use(Router)
 
 export default new Router({
@@ -130,6 +133,20 @@ export default new Router({
           name: 'Step',
           component: Step
         },
-        
+        {
+          path: '/Table',
+          name: 'Table',
+          component: Table
+        },
+        {
+          path: '/Annotation',
+          name: 'Annotation',
+          component: Annotation
+        },
+        {
+          path: '/Container',
+          name: 'Container',
+          component: Container
+        }
     ]
 })

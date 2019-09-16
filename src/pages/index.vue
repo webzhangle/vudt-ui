@@ -76,6 +76,18 @@ export default {
                     name: 'Header',
                     link: 'Header'
                 },
+                {
+                    name: 'Table',
+                    link: 'Table'
+                },
+                {
+                    name: 'Annotation',
+                    link: 'Annotation'
+                },
+                {
+                    name: 'Container',
+                    link: 'Container'
+                },
             ]
         }
     }

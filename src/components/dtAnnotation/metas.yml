@@ -1,0 +1,16 @@
+category: 基础组件
+tags: 注释
+props:
+  type:
+    type: String
+    default: 'tip'
+    discription: 注释类型，可选值为 `tip`,`warn`
+  backgroundColor:
+    type: Boolean
+    default: false
+    discription: 是否带背景颜色
+  text:
+    type: String
+    default: ''
+    discription: 注释显示的文字
+  

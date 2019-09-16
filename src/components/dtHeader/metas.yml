@@ -8,9 +8,9 @@ props:
   leftText:
     type: String
     default: false
-    zh-CN: 是否显示返回箭头后面的文字
+    descripton: 是否显示返回箭头后面的文字
   leftHide:
     type: Boolean
     default: false
-    zh-CN: 是否显示返回箭头
+    descripton: 是否显示返回箭头
   

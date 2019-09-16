@@ -5,5 +5,5 @@ props:
   checked:
     type: Boolean
     default: false
-    zh-CN: 开关是否开启
+    descripton: 开关是否开启
   

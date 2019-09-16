@@ -1,0 +1,34 @@
+@import '../../styles/config.less';
+.dt-annotation {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius:@border-radius;
+    overflow: hidden;
+    .svg-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 3px;
+    }
+    p {
+      font-size: 12px;
+      opacity: 1;
+    }
+}
+.tip {
+    p {
+      color: #F39800;
+    }
+    .svg-icon {
+      color: #F39800;
+    }
+}
+.warn {
+  p {
+    color: #FF4040;
+  }
+  .svg-icon {
+    color: #FF4040;
+  }
+}
