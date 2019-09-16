@@ -33,6 +33,10 @@ export default {
                     link: 'inputNumber'
                 },
                 {
+                    name: 'Toast',
+                    link: 'Toast'
+                },
+                {
                     name: 'Swiper',
                     link: 'Swiper'
                 },

@@ -3,18 +3,27 @@
 .dt-card-list {
     border-radius: @border-radius;
     padding: 12px;
-    padding-bottom: 0;
+    // padding-bottom: 0;
     box-sizing: border-box;
     background-color: #fff;
     border-bottom: 1px solid #EDEDED;
     .header {
 
     }
+    .children {
+        margin-top:30px;
+        ul {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 18px;
+            }
+        }
+    }
     ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         .icon-left {
             .svg-icon {
                 width: 32px;
@@ -71,7 +80,7 @@
             
         }
         .name {
-            width: 70px;
+            width: 80px;
             color: #666;
         }
     }

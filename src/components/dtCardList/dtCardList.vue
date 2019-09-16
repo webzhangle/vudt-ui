@@ -1,28 +1,28 @@
 <template>
     <div class="dt-card-list">
-        <ul class="header">
+        <ul class="header" @click="show1">
             <li class="icon-left">
                 <svg-icon :icon-class="list.headerLeftIcon"></svg-icon>
             </li>
             <li class="title">
-                <h2>{{ list.title }}</h2>
+                <h2>{{ list.title }}<dt-badge v-if="role === 'person'"></dt-badge></h2>
             </li>
-            <li class="icon-right">
+            <li class="icon-right" v-if="role === 'car'">
                 <svg-icon :icon-class="list.headerRightIcon.icon"></svg-icon>
-                <!-- <dt-badge></dt-badge> -->
             </li>
         </ul>
-        <div class="children">
+        <div class="children" v-show="show">
             <ul v-for="(item,index) in list.children" :key="index" @click="select(item.name,item.type,index)" :class="role == 'person' ? 'no-right' : ''">
                 <li class="name">
                     {{ item.name }}
+                    <dt-badge v-if="role === 'person' && item.redicon"></dt-badge>
                 </li>
                 <li class="center">
-                    <input type="text" :id="item.type" :placeholder="'请输入'+item.name" :disabled="item.name === '注册日期' || item.name === '发证日期' || item.name === '购车日期' || item.name === '证件类型'" /> 
+                    <input type="text" :id="item.type" :placeholder="'请输入'+item.name" :disabled="item.name === '车辆型号' || item.name === '注册日期' || item.name === '发证日期' || item.name === '购车日期' || item.name === '证件类型'" /> 
                 </li>
                 <li class="icon-right" v-if="item.iconRight">
                     <svg-icon :icon-class="item.iconRight.icon"></svg-icon>
-                    <!-- <dt-badge></dt-badge> -->
+                    <dt-badge v-if="role === 'person'"></dt-badge>
                 </li>
             </ul>
         </div>
@@ -71,11 +71,16 @@ export default {
             type: Object,
             default: ()=>{}
         },
-        role:[String]
+        role:[String],
+        open : {
+            type:Boolean,
+            default : false
+        }
     },
     data () {
         return {
             list: this.dataList,
+            show: this.open,
             picker1: {
                 anchor: [],
                 textTitle: '日期选择器(内置)',
@@ -105,6 +110,9 @@ export default {
 
     },
     methods: {
+        show1 () {
+            this.show = !this.show
+        },
         handlePicker1Confirm (v) {
             this.picker1.anchor = v
             this.value = v ? JSON.stringify(v) : null

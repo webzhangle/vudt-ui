@@ -2,7 +2,7 @@
     <div class="card">
         <dt-card-list role="car" :dataList="dataList1"></dt-card-list>
 
-        <dt-card-list role="person" :dataList="dataList2"></dt-card-list>
+        <dt-card-list role="person" :dataList="dataList2" open></dt-card-list>
     </div>
 </template>
 <script>
@@ -67,8 +67,8 @@ export default {
                 ]
             },
             dataList2 : {
-                headerLeftIcon: 'Vehicleowner',
-                title: '车辆信息',
+                headerLeftIcon: 'OwnerInformation',
+                title: '车主信息',
                 role: 'person',
                 headerRightIcon: {
                     icon:'camera',
@@ -78,15 +78,18 @@ export default {
                     {
                         name: '姓名',
                         content: '李泽',
+                        redicon: false
                     },
                     {
                         name: '证件类型',
                         content: '居民身份证',
                         type: 'doctype',
+                        redicon: true
                     },
                     {
                         name: '证件号码',
                         content: '211322199006010325',
+                        redicon: false
                     },
                 ]
             }
@@ -98,5 +101,8 @@ export default {
 .card {
     background: #000;
     padding: 30px;
+    .dt-card-list {
+        margin-bottom: 15px;
+    }
 }
 </style>
