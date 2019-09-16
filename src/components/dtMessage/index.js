@@ -14,12 +14,17 @@ let dtMessage = (obj) => {
         MessageDom.confirm = function () {
             resolve(MessageDom.inputValue)
             MessageDom.show = false
+            document.body.removeChild( MessageDom.$el)
         }
         MessageDom.cancel = function () {
             reject()
             MessageDom.show = false
+            document.body.removeChild( MessageDom.$el)
         }
+       
         document.body.appendChild( MessageDom.$el )
+        
+        
     })
 }
 export default dtMessage
