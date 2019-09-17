@@ -124,10 +124,10 @@ export default {
 <style lang="less" scoped>
 .dt-drawer {
  /* 遮罩 */
- height: 100vh;
-    position: fixed;
-    z-index: 999999;
-    width: 100%;
+//  height: 100vh;
+//     position: fixed;
+//     z-index: 999999;
+//     width: 100%;
  .mask-show {
   position: fixed!important;
   top: 0;
