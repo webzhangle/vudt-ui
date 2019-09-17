@@ -88,9 +88,17 @@ export default {
                     name: 'Container',
                     link: 'Container'
                 },
-                 {
+                {
                     name: 'Word',
                     link: 'Word'
+                },
+                {
+                    name: 'Progress',
+                    link: 'Progress'
+                },
+                {
+                    name: 'Step',
+                    link: 'Step'
                 },
             ]
         }

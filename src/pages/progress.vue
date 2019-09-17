@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <dt-progress percentage = "40"/>
         <dt-progress :percentage = "number"/>
     </div>
@@ -17,13 +17,20 @@ export default {
     },
     mounted () {
         this.time = setInterval(()=>{
+            if (this.number == '100') {
+                clearInterval(this.time)
+            }
             this.number = (parseInt(this.number) + 1).toString()
         },100)
     }
 }
 </script>
-<style>
-.dt-progress {
-    margin-bottom: 15px;
+<style lang="less" scoped>
+.container {
+    padding: 15px;
+    .dt-progress {
+        margin-bottom: 15px;
+    }
 }
+
 </style>
