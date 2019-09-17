@@ -3,10 +3,12 @@
     <textarea v-model="value"></textarea>
     <dt-button type="primary" @click.native="showPicker0">picker</dt-button> 
     <dt-button type="primary" @click.native="showPicker1">picker联级</dt-button> 
-    <dt-button type="primary" @click.native="showPicker4">picker区域</dt-button> 
-
+    
     <dt-button type="primary" @click.native="showPicker2">picker时间</dt-button> 
     <dt-button type="primary" @click.native="showPicker3">picker日期</dt-button> 
+    <dt-button type="primary" @click.native="showPicker4">picker区域</dt-button> 
+    <dt-button type="primary" @click.native="showPicker5">picker日期2</dt-button> 
+    <dt-button type="primary" @click.native="showPicker6">picker区域2</dt-button>
 
     <dt-picker
       ref="picker0"
@@ -43,9 +45,23 @@
     <dt-picker
       ref="picker4"
       :textTitle="picker4.textTitle"
-      :data="picker4.data"
+      :type="picker4.type"
       :anchor="picker4.anchor"
       @confirm="handlePicker4Confirm">
+    </dt-picker>
+    <dt-picker
+      ref="picker5"
+      :textTitle="picker5.textTitle"
+      :type="picker5.type"
+      :anchor="picker5.anchor"
+      @confirm="handlePicker5Confirm">
+    </dt-picker>
+    <dt-picker
+      ref="picker6"
+      :textTitle="picker6.textTitle"
+      :type="picker6.type"
+      :anchor="picker6.anchor"
+      @confirm="handlePicker6Confirm">
     </dt-picker>
   </div>
 </template>
@@ -55,7 +71,6 @@ import Vue from 'vue'
 import {picker,button} from '@/components/index';
 Vue.use(picker)
 Vue.use(button)
-import areaData from './area.js'
 
 const data1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 const data2 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -119,8 +134,18 @@ export default {
       picker4: {
         anchor: [],
         textTitle: '区域选择器',
-        data: areaData
-      }
+        type: 'area'
+      },
+      picker5: {
+        anchor: [],
+        textTitle: '日期选择器(内置)',
+        type: 'date2'
+      },
+      picker6: {
+        anchor: [],
+        textTitle: '区域选择器2',
+        type: 'area2'
+      },
     }
   },
   methods: {
@@ -161,6 +186,20 @@ export default {
     },
     handlePicker4Confirm (v) {
       this.picker4.anchor = v
+      this.value = v ? JSON.stringify(v) : null
+    },
+    showPicker5 () {
+      this.$refs.picker5.show()
+    },
+    handlePicker5Confirm (v) {
+      this.picker5.anchor = v
+      this.value = v ? JSON.stringify(v) : null
+    },
+    showPicker6 () {
+      this.$refs.picker6.show()
+    },
+    handlePicker6Confirm (v) {
+      this.picker6.anchor = v
       this.value = v ? JSON.stringify(v) : null
     }
   }

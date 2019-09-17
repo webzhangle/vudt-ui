@@ -5,13 +5,13 @@
           <thead>
             <tr>
               <th></th>
-              <th nowrap="nowrap" v-for="(item,index) in dataList.head" :key="index">{{ item }}</th>
+              <th nowrap="nowrap" v-for="(item,index) in dataList.head" :key="index" :style="style">{{ item }}</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item , index) in dataList.content" :key="index">
-              <th scope="row" nowrap="nowrap">{{item.title}}</th>
-              <td v-for="(item1 ,index1) in item.content" :key="index1">{{ item1 }}</td>
+              <th scope="row" nowrap="nowrap" :style="style">{{item.title}}</th>
+              <td v-for="(item1 ,index1) in item.content" :key="index1" :style="style">{{ item1 }}</td>
             </tr>
           </tbody>
         </table>
@@ -32,6 +32,7 @@ export default {
     },
     data () {
       return {
+        style: this.scroll? '': 'padding: 0;text-align: center;width:80px',
         overflow:this.scroll? 'auto': 'hidden'
       }
     }

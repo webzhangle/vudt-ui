@@ -1,5 +1,6 @@
 import range from './range'
-
+import area from '../area.js'
+import area2 from '../area2.js'
 const START_YEAR = 1900
 const END_YEAR = 2100
 
@@ -42,13 +43,30 @@ function getDays (y, m) {
 const yearData = range(START_YEAR, END_YEAR, false, UNIT_YEAR)
 const monthData = range(1, 12, false, UNIT_MONTH)
 
+// <!-- 2019-9-17张乐修改
+const cascadeMonthData2 = monthData.map((month) => {
+  return {
+    value: month,
+    // children: []
+  }
+})
+const dateData2 = yearData.map((year) => {
+  const item = {
+    value: year,
+    children: cascadeMonthData2.slice()
+  }
+  item.children.forEach((month) => {
+    // month.children = getDays(year.slice(0, -1), month.value.slice(0, -1))
+  })
+  return item
+})
+// 2019-9-17张乐修改 -->
 const cascadeMonthData = monthData.map((month) => {
   return {
     value: month,
     children: []
   }
 })
-
 const dateData = yearData.map((year) => {
   const item = {
     value: year,
@@ -59,7 +77,6 @@ const dateData = yearData.map((year) => {
   })
   return item
 })
-
 const date = new Date()
 const dateAnchor = [
   { value: `${date.getFullYear()}${UNIT_YEAR}` },
@@ -69,5 +86,8 @@ const dateAnchor = [
 
 export {
   dateAnchor,
-  dateData
+  dateData,
+  dateData2,
+  area,
+  area2
 }

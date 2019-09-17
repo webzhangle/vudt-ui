@@ -77,10 +77,6 @@ export default {
                     link: 'Header'
                 },
                 {
-                    name: 'Header',
-                    link: 'Header'
-                },
-                {
                     name: 'Table',
                     link: 'Table'
                 },
