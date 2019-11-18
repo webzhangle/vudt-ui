@@ -35,7 +35,7 @@ export default {
                 content : [
                     {
                         title : '标题',
-                        content : ['内容','内容','内容','内容']
+                        content : ['内容','内容','内容','内容1']
                     },
                     {
                         title : '标题',

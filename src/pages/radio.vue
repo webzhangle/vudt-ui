@@ -45,7 +45,6 @@ export default {
 .radio {
     padding: 30px;
     ul {
-        
         li {
             display: flex;
             justify-content: center;
